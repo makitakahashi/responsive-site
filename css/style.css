@@ -1,0 +1,111 @@
+@charset "UTF-8";    /* 文字コードの指定 */
+
+@import 'https://fonts.googleapis.com/css?family=Abel';    /* Google Fonts用のCSSを読み込み */
+
+html
+{
+    font-size: 62.5%;
+}
+body
+{
+    font-family: '游ゴシック', YuGothic, 'メイリオ', Verdana, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    letter-spacing: .1em;
+    color: #808080;
+    background-color: #FFFFFF;
+}
+header
+{
+  background-image: url("../image/cat_2.jpg");
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+.text-center
+{
+    text-align: center;
+}
+h2 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+section
+{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+}
+section::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.boxies {
+  width: 30%;
+  min-height: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  float: left;
+  background-color: #bce2e8;
+}
+.title {
+    text-align: center;
+    padding: 5px;
+}
+.text {
+    background-color: #F8F8FF;
+    padding: 10px;
+    text-align: center;
+    min-height: 70px;
+}
+
+footer {
+    margin: 20px 0;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    background-color: #F8F8FF;
+  }
+h4 {
+    margin-bottom: 20px;
+}
+.button
+{
+    background-color: #bce2e8;
+    display: block; /* ブロック要素のように扱う */
+    width: 100px; /* 幅 */
+    height: 20px; /* 高さ */
+    margin: auto;
+    padding: auto; /* 要素の内側の余白 */
+    text-align: center; /* テキストの中央寄せ *
+    border: 2px solid #4c4c4c; /* ボーダー */
+    -webkit-border-radius: 4px; /* 角丸 */
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+}
+.button a 
+{ 
+  text-decoration: none; color: #808080
+}
+@media (max-width: 768px) {
+header
+{
+  height: 250px;
+}
+section 
+{
+  flex-direction: column;
+  }
+.boxies 
+{
+  width: 90%;
+  float: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  }
+.text {
+  min-height: auto;
+  }
+}
